@@ -33,4 +33,5 @@ jobs:
         run: npm run lint
         
       - name: Unit Test
-        run: npm run test -- --coverage
+        #run: npm run test -- --coverage
+        run: npm run test -- --json --outputFile=jest-report.json
